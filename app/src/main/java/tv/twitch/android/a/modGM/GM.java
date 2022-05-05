@@ -280,7 +280,7 @@ public class GM {
 
 
     int jj;
-
+    int dv;
     public void fgd(StartActivityGM startActivityGM) {
         Handler nngf = new Handler();
         nngf.post(new Runnable() {
@@ -288,31 +288,41 @@ public class GM {
             public void run() {
 
                 if (!nnfgdf.equals("-") || !vsdgdwf.equals("-")) {
-                    if (nnfgdf.equals(decodeGM("Tm9uLW9yZ2FuaWM="))) {
-                        String vdrds = vsdvdkf + nnhg;
-                        kgn(vdrds);
-                        ufn(vdrds);
-                        Log.d("weq", "app" + vdrds);
-                        jj = 1;
 
-                    } else if (bfdvfd != null) {
-                        String tytew = vsdvdkf + vsdgdwf;
-                        kgn(tytew);
-                        ufn(tytew);
-                        jj = 1;
-                        Log.d("weq", "deep" + tytew);
+                    if (nnfgdf.equals(decodeGM("Tm9uLW9yZ2FuaWM="))){
+                        dv = 0;
+                    } else if (bfdvfd != null){
+                        dv = 1;
+                    } else if (vdsvduv.equals("0")){
+                        dv = 2;
+                    }else {
+                        dv = 3;
+                    }
 
-                    } else {
-                        if (vdsvduv.equals("0")) {
+                    switch (dv){
+                        case 0:
+                            String vdrds = vsdvdkf + nnhg;
+                            kgn(vdrds);
+                            ufn(vdrds);
+                            Log.d("weq", "app" + vdrds);
+                            jj = 1;
+                            break;
+                        case 1:
+                            String tytew = vsdvdkf + vsdgdwf;
+                            kgn(tytew);
+                            ufn(tytew);
+                            jj = 1;
+                            Log.d("weq", "deep" + tytew);
+                            break;
+                        case 2:
                             kkf();
                             jj = 1;
                             Log.d("weq", "game");
-
-                        } else {
-
+                            break;
+                        case 3:
                             dhdk();
+                            break;
 
-                        }
                     }
 
                 } else {
